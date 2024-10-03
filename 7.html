@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 1.7</title>
+</head>
+<body>
+    <script>
+        function truncate(str, maxlength) {
+            if (str.length > maxlength) {
+                return str.slice(0, maxlength - 1) + '…';
+            } else {
+                return str;
+            }
+        }
+
+        let str = prompt("Введіть повідомлення:")
+        let maxlength = prompt("Вкажіть максимальну довжину повідомлення:")
+        alert(truncate(str, maxlength));
+    </script>
+</body>
+</html>
